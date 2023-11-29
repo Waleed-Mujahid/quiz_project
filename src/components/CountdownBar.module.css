@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  height: fit-content;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 2vw;
+}
+
+.bar {
+  height: 3vh;
+  border-radius: 10px;
+  transition: width 1s linear;
+  box-sizing: border-box;
+}
+
+.timeLeft {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:white
+}

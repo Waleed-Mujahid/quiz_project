@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questionBox {
+  background-color: white;
+  width: 80%;
+  margin: 3vw;
+  padding: 1.2vw;
+  border-radius: 50px;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.answerBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.imgBox {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 70%;
+  padding: 3vw;
+  border-radius: 50px;
+}
+
+.optionsBox {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 2vw 5vw;
+}
+
+.option {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2vw;
+  border-radius: 10px;
+  background-color: #dddddd;
+  color: black;
+  font-size: 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 1vw; /* Add margin between options */
+}
+
+.option:hover {
+  background-color: #ffffff;
+}
+
+.option:focus {
+  background-color:rgb(75, 107, 251);
+}
+
+.btnBox {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  box-sizing: border-box;
+  padding: 2vw 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.quesNum {
+  padding: 1vw 2vw;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

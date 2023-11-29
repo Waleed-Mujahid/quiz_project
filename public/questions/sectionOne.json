@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "What is the capital of France?",
+    "answers": [
+      "Paris",
+      "London",
+      "Berlin"
+    ],
+    "correctAnswer": "Paris"
+  },
+  {
+    "id": 2,
+    "question": "What is the largest planet in our solar system?",
+    "answers": [
+      "Jupiter",
+      "Mars",
+      "Earth"
+    ],
+    "correctAnswer": "Jupiter"
+  },
+  {
+    "id": 3,
+    "question": "Who painted the Mona Lisa?",
+    "answers": [
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Vincent van Gogh"
+    ],
+    "correctAnswer": "Leonardo da Vinci"
+  }
+]

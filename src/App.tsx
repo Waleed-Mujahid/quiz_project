@@ -1,22 +1,40 @@
 import { useState } from 'react'
 import LandingPage from './LandingPage'
+import SectionOne from './components/SectionOne';
+import SectionTwo from './components/SectionTwo';
+import SectionThree from './components/SectionThree';
 
 function App() {
   const [isStarted, setIsStarted] = useState(false);
+  const [sectionNumber, setSectionNumber] = useState(0);
+  const [score, setScore] = useState(0);  
 
   const clickHandler = () => {
     setIsStarted(true);
+    setSectionNumber(1);
+  }
+
+  const nextSection = () => {
+    setSectionNumber(sectionNumber + 1);
   }
 
   if (!isStarted) {
     return <LandingPage startTest = {clickHandler} />
   }
   
-  return (
-    <div>
-      <h1>Test started</h1>
-    </div>
-  )
+  if (sectionNumber === 1) {
+    return <SectionOne changeSection = {nextSection} updateScore = {setScore} />
+  }
+  console.log(score);
+
+  if (sectionNumber === 2) {
+    return <SectionTwo />
+  }
+
+  if (sectionNumber === 3) {
+    return <SectionThree />
+  }
+
 }
 
 export default App
