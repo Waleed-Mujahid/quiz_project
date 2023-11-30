@@ -1,26 +1,30 @@
 [
   {
     "id": 1,
+    "type": "mcq",
     "question": "What is the capital of France?",
     "answers": [
       "Paris",
-      "London",
-      "Berlin"
+      "London"
     ],
     "correctAnswer": "Paris"
   },
   {
     "id": 2,
+    "type": "mcq",
     "question": "What is the largest planet in our solar system?",
     "answers": [
       "Jupiter",
       "Mars",
-      "Earth"
+      "Earth",
+      "Saturn",
+      "Neptune"
     ],
     "correctAnswer": "Jupiter"
   },
   {
     "id": 3,
+    "type": "mcq",
     "question": "Who painted the Mona Lisa?",
     "answers": [
       "Leonardo da Vinci",

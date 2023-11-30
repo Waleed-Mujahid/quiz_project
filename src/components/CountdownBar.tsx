@@ -28,24 +28,26 @@ const CountdownBar: React.FC<CountdownBarProps> = ({
     return () => clearInterval(timer);
   }, [timeLeft, onComplete]);
 
-  const barWidth = (timeLeft / 9) * 100 + "%";
-  if (timeLeft <= 5) {
-    barColor = "#ffff00";
-    textColor = "#ffff00";
-  } else if (timeLeft <= 2) {
+  const barWidth = (timeLeft / 10) * 100 + "%";
+  if (timeLeft <= 2) {
     barColor = "#ff0000";
     textColor = "#ff0000";
+  } else if (timeLeft <= 5) {
+    barColor = "#ffff00";
+    textColor = "#ffff00";
   }
 
   return (
     <div className={classes.container}>
       <div className={classes.timeLeft} style={{ color: textColor }}>
-        00:0{timeLeft}s
+        {timeLeft}s
       </div>
       <div
         className={classes.bar}
         style={{ width: barWidth, backgroundColor: barColor }}
-      >&nbsp;&nbsp;</div>
+      >
+        &nbsp;&nbsp;
+      </div>
     </div>
   );
 };

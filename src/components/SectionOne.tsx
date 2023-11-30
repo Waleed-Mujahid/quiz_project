@@ -12,13 +12,14 @@ interface DataItem {
   question: string;
   answers: string[];
   correctAnswer: string;
+  type: string;
 }
 
 const SectionOne: React.FC<SectionOneProps> = (props) => {
   const [data, setData] = useState<DataItem[]>([]);
   const [num, setNum] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
-  const [timeLeft, setTimeLeft] = useState<number>(9);
+  const [timeLeft, setTimeLeft] = useState<number>(10);
   const [answer, setAnswer] = useState<string>("");
 
 
@@ -31,16 +32,11 @@ const SectionOne: React.FC<SectionOneProps> = (props) => {
     }
   };
 
-  const incScore = () => {
-    setScore(score + 1);
-  };
-
   const startNextQuestion = () => {
     if (answer === data[num].correctAnswer) {
-      incScore();
-      console.log(score);
+      setScore(score+1);
     }
-    setTimeLeft(9);
+    setTimeLeft(10);
     incrementNum();
   };
 
@@ -60,21 +56,17 @@ const SectionOne: React.FC<SectionOneProps> = (props) => {
     };
 
     fetchData();
-  }, []);
+  }, [num]);
 
   if (data.length === 0) {
     return <div>Loading...</div>;
   }
 
   return (
-    <>
-      <CountdownBar onComplete={startNextQuestion} timeLeft = {timeLeft} setTimeLeft = {setTimeLeft} />
-      <Question
-        question={data[num]}
-        startNextQuestion = {startNextQuestion}
-        setAnswer = {setAnswer}
-      />
-    </>
+    <div key={num}>
+      <CountdownBar onComplete={startNextQuestion} timeLeft={timeLeft} setTimeLeft={setTimeLeft} />
+      <Question question={data[num]} startNextQuestion={startNextQuestion} setAnswer={setAnswer} />
+    </div>
   );
 };
 

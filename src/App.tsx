@@ -25,10 +25,10 @@ function App() {
   if (sectionNumber === 1) {
     return <SectionOne changeSection = {nextSection} updateScore = {setScore} />
   }
-  console.log(score);
+  
 
   if (sectionNumber === 2) {
-    return <SectionTwo />
+    return <SectionTwo score = {score}/>
   }
 
   if (sectionNumber === 3) {

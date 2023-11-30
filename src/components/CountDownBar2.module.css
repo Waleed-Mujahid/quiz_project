@@ -1,0 +1,64 @@
+
+.container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+.barContainer {
+  width: 70vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  place-items: center;
+  padding: 0 3vw;
+}
+
+.bar {
+  height: 1vh;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.timeLeft {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dddddd;
+  margin-bottom: 0.5em;
+}
+
+.icons {
+  width: 30vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  float: left;
+  padding: 0 3vw;
+}
+.symbol {
+  background-color: transparent;
+  border: none;
+  padding: 0 2vw;
+  font-size: inherit;
+  cursor:default;
+}
+
+.flag {
+  height: 5vh;
+  width: auto;
+  cursor: pointer;
+}
+
+
+.viewFlagged {
+  height: 5vh;
+  width: auto;
+  cursor: pointer;
+}
