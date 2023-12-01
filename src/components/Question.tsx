@@ -4,10 +4,6 @@ import { QuestionProps } from "./SectionOne";
 
 export const Question: React.FC<QuestionProps> = (props) => {
 
-  const clickHandler = (selectedAnswer: string) => {
-    props.setAnswer(selectedAnswer);
-  };
-
   const handleButtonClick = () => {
     props.startNextQuestion();
   };
@@ -20,7 +16,7 @@ export const Question: React.FC<QuestionProps> = (props) => {
         <div className={classes.imgBox}>
           <img
             className={classes.img}
-            src="pictures/question.png"
+            src={props.question.img}
             alt="image for question" />
         </div>
         <div className={classes.optionsBox}>
@@ -28,7 +24,7 @@ export const Question: React.FC<QuestionProps> = (props) => {
             <button
               className={classes.option}
               key={index}
-              onClick={() => clickHandler(option)}
+              onClick={() => {props.setAnswer(option)}}
             >
               {option}
             </button>

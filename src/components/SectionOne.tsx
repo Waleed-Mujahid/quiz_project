@@ -4,7 +4,7 @@ import { Question } from "./Question";
 
 interface SectionOneProps {
   changeSection: () => void;
-  updateScore: (score: number) => void;
+  updateScore: () => void;
 }
 
 interface DataItem {
@@ -13,12 +13,12 @@ interface DataItem {
   answers: string[];
   correctAnswer: string;
   type: string;
+  img: string;
 }
 
 const SectionOne: React.FC<SectionOneProps> = (props) => {
   const [data, setData] = useState<DataItem[]>([]);
   const [num, setNum] = useState<number>(0);
-  const [score, setScore] = useState<number>(0);
   const [timeLeft, setTimeLeft] = useState<number>(10);
   const [answer, setAnswer] = useState<string>("");
 
@@ -27,14 +27,13 @@ const SectionOne: React.FC<SectionOneProps> = (props) => {
     if (num < data.length - 1) {
       setNum(num + 1);
     } else {
-      props.updateScore(score);
       props.changeSection();
     }
   };
 
   const startNextQuestion = () => {
     if (answer === data[num].correctAnswer) {
-      setScore(score+1);
+      props.updateScore();
     }
     setTimeLeft(10);
     incrementNum();

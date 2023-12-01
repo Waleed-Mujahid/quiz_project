@@ -22,16 +22,24 @@
   flex-direction: row;
 }
 
-.imgBox {
+.box {
   width: 60%;
-  display: flex;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 2vw;
+  margin: 2vw;
+  border-radius: 20px;
 }
 
 .img {
-  width: 60%;
-  border-radius: 20px;
+  width: 100%;
+  height: 30vh;
+  border-radius: 50px;
 }
 
 .optionsBox {
@@ -46,7 +54,7 @@
   box-sizing: border-box;
   width: 100%;
   border-radius: 10px;
-  background-color: #dddddd;
+  background-color: #fff;
   color: #111;
   font-size: 1.5vw;
   text-align: left;
@@ -98,13 +106,7 @@
     box-sizing: border-box;
     padding: 0 4vw;
   }
-  .imgBox {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .img {
-    width: 100%;
-  }
+  
   .optionsBox {
     padding: 2vw 2vw;
   }

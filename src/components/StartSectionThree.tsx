@@ -1,20 +1,17 @@
 import classes from "./StartSectionTwo.module.css";
 
-interface StartSectionTwoProps {
+interface StartSectionThreeProps {
   setIsStarted: (isStarted: boolean) => void;
 }
-
-const StartSectionTwo = (props: StartSectionTwoProps) => {
+export const StartSectionThree = (props: StartSectionThreeProps) => {
   return (
     <div className={classes.textBox}>
-      <div className={classes.heading}>Explanation of part of knowledge</div>
+      <div className={classes.heading}>Explanation of the insight part</div>
       <div className={classes.text}>
-        In this part you will be asked 12 questions of which you must get at
-        least 10 correct.
+      In this part you will be asked 28 questions, of which you must get at least 25 correct.
       </div>
       <div className={classes.text}>
-        You will have a total of 8 minutes. You also have the option to browse
-        through the questions.
+      You will have a total of 16 minutes. Here you also have the option to browse through the questions.
       </div>
       <button
         className={classes.btn}
@@ -28,4 +25,5 @@ const StartSectionTwo = (props: StartSectionTwoProps) => {
   );
 };
 
-export default StartSectionTwo;
+export default StartSectionThree;
+

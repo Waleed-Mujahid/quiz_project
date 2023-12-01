@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "type": "mcq",
+    "question": "What is the capital of France?",
+    "answers": [
+      "Paris",
+      "London"
+    ],
+    "correctAnswer": "Paris",
+    "img": "/pictures/question.png"
+  },
+  {
+    "id": 2,
+    "type": "input",
+    "question": "What is the number of planets in the solar system?",
+    "correctAnswer": "8",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/1200px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg"
+  },
+  {
+    "id": 3,
+    "type": "image",
+    "question": "Who painted the Mona Lisa?",
+    "optionImages" : [
+      "https://www.sabsignage.com/wp-content/uploads/2019/07/Cautionary-and-Mandatory-Signboard.jpg",
+      "https://m.media-amazon.com/images/I/515l-e-sG6L._AC_UF1000,1000_QL80_.jpg",
+      "https://m.media-amazon.com/images/I/619yG61w93L._SX425_.jpg"
+    ],
+    "img": "/pictures/question.png",
+    "correctAnswer": "https://m.media-amazon.com/images/I/619yG61w93L._SX425_.jpg"
+  }
+]

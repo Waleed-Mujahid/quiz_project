@@ -8,7 +8,7 @@
       "London"
     ],
     "correctAnswer": "Paris",
-    "img": "https://media.gettyimages.com/id/1298383663/photo/aerial-view-of-paris-streets-and-eiffel-tower-at-sunset-france.jpg?s=170667a&w=gi&k=20&c=7U_RBiO6T6FSTLRZ5jXZ2FUR3vpTX8Zxq_3W8E8teaY="
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Paris_vue_d%27ensemble_tour_Eiffel.jpg/1200px-Paris_vue_d%27ensemble_tour_Eiffel.jpg"
   },
   {
     "id": 2,
@@ -22,7 +22,7 @@
       "Neptune"
     ],
     "correctAnswer": "Jupiter",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/800px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg"
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/1200px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg"
   },
   {
     "id": 3,
@@ -34,6 +34,6 @@
       "Vincent van Gogh"
     ],
     "correctAnswer": "Leonardo da Vinci",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/800px-Mona_Lisa.jpg"
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/1200px-Mona_Lisa.jpg"
   }
 ]
