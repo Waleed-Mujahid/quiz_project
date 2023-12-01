@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "categoryID": 3,
     "type": "mcq",
     "question": "What is the capital of France?",
     "answers": [
@@ -12,6 +13,7 @@
   },
   {
     "id": 2,
+    "categoryID": 2,
     "type": "mcq",
     "question": "What is the largest planet in our solar system?",
     "answers": [
@@ -26,6 +28,7 @@
   },
   {
     "id": 3,
+    "categoryID": 2,
     "type": "mcq",
     "question": "Who painted the Mona Lisa?",
     "answers": [

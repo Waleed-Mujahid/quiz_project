@@ -6,7 +6,7 @@ interface CircularChartProps {
 }
 
 const CircularChart: React.FC<CircularChartProps> = ({ percentage }) => {
-  const color = percentage > 70 ? `rgb(5,255,5)` : `rgb(255,100,100)`;
+  const color = percentage > 70 ? `rgb(13, 194, 13)` : `rgb(255,100,100)`;
 
   return (
     <svg viewBox="0 0 36 36" className="circular-chart orange">
@@ -16,7 +16,6 @@ const CircularChart: React.FC<CircularChartProps> = ({ percentage }) => {
           a 15.9155 15.9155 0 0 1 0 -31.831"
       />
       <path className="circle"
-        stroke-dasharray="30, 100"
         d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"

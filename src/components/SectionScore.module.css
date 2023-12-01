@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  place-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;  
+}
+
+.sectionHeading {
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #222;
+}
+
+.container > div {
+  padding: 1vw;
+}
+
+@media (max-width: 768px) {
+  .container > div {
+    padding: 2vw;
+  }
+
+  .sectionHeading {
+    font-size: 4vw;
+    margin-top: 1vw;
+    font-weight: 600;
+  }
+}

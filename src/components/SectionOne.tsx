@@ -1,19 +1,23 @@
 import React, { useEffect, useState } from "react";
 import CountdownBar from "./CountdownBar";
 import { Question } from "./Question";
+import { error } from "../App";
 
 interface SectionOneProps {
   changeSection: () => void;
   updateScore: () => void;
+  section: number;
+  updateError: (section: number, errorList: error) => void;
 }
 
-interface DataItem {
-  id: string;
+export interface DataItem {
+  id: number;
   question: string;
   answers: string[];
   correctAnswer: string;
   type: string;
   img: string;
+  categoryID: number;
 }
 
 const SectionOne: React.FC<SectionOneProps> = (props) => {
@@ -34,6 +38,13 @@ const SectionOne: React.FC<SectionOneProps> = (props) => {
   const startNextQuestion = () => {
     if (answer === data[num].correctAnswer) {
       props.updateScore();
+    }
+    else {
+      const error: error = {
+        id: data[num].id,
+        categoryID: data[num].categoryID,
+      };
+      props.updateError(props.section, error);
     }
     setTimeLeft(10);
     incrementNum();

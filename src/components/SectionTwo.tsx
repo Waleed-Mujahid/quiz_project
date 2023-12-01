@@ -7,22 +7,26 @@ import ShowFlag from "./ShowFlag";
 import Overview from "./Overview";
 import InputQuestion from "./InputQuestion";
 import ImageQuestion from "./ImageQuestion";
+import { error } from "../App";
 
 interface SectionTwoProps {
   updateScore: (newScore: number) => void;
   changeSection: () => void;
   path: string;
   totalTime: number;
+  section: number;
+  updateError: (section: number, errorList: error) => void;
 }
 
 interface DataItem {
-  id: string;
+  id: number;
   question: string;
   answers: string[];
   correctAnswer: string;
   type: string;
   img: string;
   optionImages: string[];
+  categoryID: number;
 }
 
 export default function SectionTwo(props: SectionTwoProps) {
@@ -68,8 +72,13 @@ export default function SectionTwo(props: SectionTwoProps) {
     for (let i = 0; i < data.length; i++) {
       if (data[i].correctAnswer === isAnswered[i]) {
         score++;
+      } else {
+        const error: error = {
+          id: data[i].id,
+          categoryID: data[i].categoryID,
+        };
+        props.updateError(props.section, error);
       }
-      console.log(isAnswered);
     }
     props.updateScore(score);
   };

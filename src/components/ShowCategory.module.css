@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 1vw;
+}
+
+.container > div {
+  margin: 0.3vw;
+}
+
+.filled {
+  height: 100%;
+  background-color: #3498db;
+  border-radius: 20px;
+  height: 0.5vw;
+  box-sizing: border-box;
+}
+
+.bar {
+  width: 100%;
+  background-color: #ccc;
+  height: auto;
+  padding: 0.2vw 0;
+  border-radius: 20px;
+  box-sizing: border-box;
+}

@@ -149,6 +149,7 @@
   }
   .optionsBox {
     padding: 2vw 2vw;
+    grid-template-rows: 1fr 2fr 1fr;
   }
 
   .option {

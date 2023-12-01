@@ -1,5 +1,16 @@
-{
-  "sectionOneQuestions": 3,
-  "sectionTwoQuestions": 1,
-  "sectionThreeQuestions": 5
-}
+[
+  {
+    "totalQuestions": 3,
+    "maxErrorsAllowed": 1
+  }
+  ,
+  {
+    "totalQuestions": 3,
+    "maxErrorsAllowed": 1
+  }
+  ,
+  {
+    "totalQuestions": 3,
+    "maxErrorsAllowed": 1
+  }
+]

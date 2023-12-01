@@ -1,0 +1,17 @@
+[
+  {
+    "categoryID": 1,
+    "categoryName": "Beverages",
+    "total": "3"
+  },
+  {
+    "categoryID": 2,
+    "categoryName": "Condiments",
+    "total": "4"
+  },
+  {
+    "categoryID": 3,
+    "categoryName": "Confections",
+    "total": "2"
+  }
+]

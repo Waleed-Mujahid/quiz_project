@@ -28,10 +28,21 @@
   font-size: 1.8vw;
   font-weight: 600;
   color: #222;
+  margin-top: 1vw;
 }
+
 .result {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.sectionResult {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  padding: 1.5vw;
+  box-sizing: border-box;
+  place-items: center;
 }
 
 .score {
@@ -57,9 +68,41 @@
   font-weight: lighter;
 }
 
+.wrongContainer {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  align-items: start;
+  
+}
+
+.catGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  width: 100%;
+  padding: 1.5vw;
+  box-sizing: border-box;
+  place-items: center;
+  gap: 2vw;
+}
+
 @media (max-width: 768px) {
   .outerBox{
     padding: 5vw;
+  }
+
+  .catGrid {
+    grid-template-columns: 1fr; 
+  }
+
+  .sectionResult {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .sectionResult > div {
+    padding: 1vw;
   }
 
   .subHeading{
@@ -72,7 +115,7 @@
   }
 
   .subHeading2{
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   .score {

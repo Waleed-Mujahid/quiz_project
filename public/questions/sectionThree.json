@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "categoryID": 3,
     "type": "mcq",
     "question": "What is the capital of France?",
     "answers": [
@@ -12,6 +13,7 @@
   },
   {
     "id": 2,
+    "categoryID": 1,
     "type": "input",
     "question": "What is the number of planets in the solar system?",
     "correctAnswer": "8",
@@ -19,6 +21,7 @@
   },
   {
     "id": 3,
+    "categoryID": 1,
     "type": "image",
     "question": "Who painted the Mona Lisa?",
     "optionImages" : [
