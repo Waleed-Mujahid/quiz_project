@@ -32,7 +32,7 @@ function App() {
 
   const clickHandler = () => {
     setIsStarted(true);
-    setSectionNumber(1);
+    setSectionNumber(3);
   };
 
   const incScore = () => {

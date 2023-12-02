@@ -73,7 +73,7 @@ const SectionOne: React.FC<SectionOneProps> = (props) => {
   }
 
   return (
-    <div key={num}>
+    <div style={{display: "grid", gridTemplateRows: "1fr 10fr", height: "100%"}} key = {num}>
       <CountdownBar onComplete={startNextQuestion} timeLeft={timeLeft} setTimeLeft={setTimeLeft} />
       <Question question={data[num]} startNextQuestion={startNextQuestion} setAnswer={setAnswer} />
     </div>

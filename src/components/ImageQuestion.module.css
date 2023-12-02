@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,7 @@
   background-color: white;
   width: 80%;
   margin: 1vw;
-  padding: 1.2vw;
+  padding: 0.5vw;
   border-radius: 50px;
   color: #111;
   text-align: center;
@@ -18,21 +18,22 @@
 
 .answerBox {
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2vw;
+  place-content: center;
+  padding: 0 2vw;
+  justify-content: center;
 }
 
 .box {
-  width: 60%;
-  height: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   background-color: white;
   box-sizing: border-box;
-  padding: 2vw;
-  margin: 2vw;
   border-radius: 20px;
 }
 
@@ -43,7 +44,6 @@
 }
 
 .optionsBox {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;

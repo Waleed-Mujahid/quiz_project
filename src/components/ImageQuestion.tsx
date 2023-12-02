@@ -2,7 +2,7 @@ import classes from "./ImageQuestion.module.css";
 import { McqProps } from "./SectionTwo";
 
 export default function ImageQuestion(props: McqProps) {
-  const first = props.question.id == "1";
+  const first = props.question.id == 1;
 
   return (
     <div className={classes.container}>

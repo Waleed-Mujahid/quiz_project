@@ -9,7 +9,7 @@
 }
 
 .bar {
-  height: 3vh;
+  height: 1vh;
   border-radius: 10px;
   transition: width 1s linear;
   box-sizing: border-box;

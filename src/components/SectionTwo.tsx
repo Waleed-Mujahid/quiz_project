@@ -163,7 +163,7 @@ export default function SectionTwo(props: SectionTwoProps) {
   }
 
   return (
-    <>
+    <div style={{display: "grid", gridTemplateRows: "1fr 10fr", height: "100%"}}>
       <CountdownBar2
         flagQuestion={toggleFlagged}
         flag={flagged[num]}
@@ -179,7 +179,7 @@ export default function SectionTwo(props: SectionTwoProps) {
           setGotoNext={setGotoNextSection}
         />
       )}
-    </>
+    </div>
   );
 }
 

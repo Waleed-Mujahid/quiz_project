@@ -30,8 +30,8 @@
 .timeLeft {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #dddddd;
-  margin-bottom: 0.5em;
+  color:white;
+  /* margin-bottom: 0.5em; */
 }
 
 .icons {
@@ -42,12 +42,19 @@
   float: left;
   padding: 0 3vw;
 }
+
+.symbol:hover{
+  color: white;
+
+}
+
 .symbol {
   background-color: transparent;
   border: none;
   padding: 0 2vw;
   font-size: inherit;
   cursor:default;
+  color:#cccccc
 }
 
 .flag {
