@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import classes from "./CountdownBar2.module.css";
+import classes from "./CountdownBarSecond.module.css";
 
 interface CountdownBar2Props {
   flagQuestion: () => void;
