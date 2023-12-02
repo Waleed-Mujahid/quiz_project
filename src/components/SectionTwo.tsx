@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { CountdownBar2 } from "./CountdownBar2";
+import { CountdownBar2 } from "./CountdownBarSecond";
 import StartSectionTwo from "./StartSectionTwo";
 import StartSectionThree from "./StartSectionThree";
 import McqQuestion from "./McqQuestion";
