@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import classes from "./McqQuestion.module.css";
 import { McqProps } from "./SectionTwo";
 
