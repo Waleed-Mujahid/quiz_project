@@ -3,7 +3,7 @@ import { McqProps } from "./SectionTwo";
 import { useState } from "react";
 
 export default function InputQuestion(props: McqProps) {
-  const first = props.question.id === "1";
+  const first = props.question.id === 1;
   const value = "Type your answer";
   const [input, setInput] = useState(`${props.answer ? props.answer : ""}`);
 
@@ -53,7 +53,7 @@ export default function InputQuestion(props: McqProps) {
                 &lt; Previous One
               </button>
             )}
-            <div className={classes.quesNum}>{props.question.id}/25</div>
+            <div className={classes.quesNum}>{props.question.id}/{props.totalQuestions}</div>
             <button className={classes.btn} onClick={props.gotoNext}>
               Next One &gt;
             </button>

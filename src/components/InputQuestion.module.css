@@ -61,11 +61,11 @@
   font-size: 1.5vw;
   text-align: left;
   cursor: pointer;
-  margin-bottom: 1vw; 
+  margin-bottom: 1vw;
   font-weight: normal;
 }
 
-.gridContainer{
+.gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -103,11 +103,11 @@
 }
 
 .option:focus {
-  background-color:rgb(75, 107, 251);
+  background-color: rgb(75, 107, 251);
 }
 
 .active {
-  background-color:rgb(75, 107, 251);
+  background-color: rgb(75, 107, 251);
 }
 
 .btnBox {
@@ -116,6 +116,7 @@
   justify-content: right;
   box-sizing: border-box;
   padding: 2vw 0;
+  place-items: center;
 }
 
 .btn {
@@ -140,16 +141,19 @@
     box-sizing: border-box;
     padding: 0 4vw;
   }
+
   .imgBox {
     width: 80%;
     margin: 0 auto;
   }
+
   .img {
     width: 100%;
   }
+
   .optionsBox {
     padding: 2vw 2vw;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2.5fr 1fr;
   }
 
   .option {
@@ -161,11 +165,17 @@
     font-size: 1rem;
     margin-left: 0;
     margin-right: 0;
+    padding: 1vw 3vw;
+  }
+
+  .value {
+    font-size: 1.5rem;
   }
 
   .btn {
     font-size: 1rem;
   }
+
   .quesNum {
     font-size: 1.2rem;
   }

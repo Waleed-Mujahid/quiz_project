@@ -17,7 +17,6 @@ export const Question: React.FC<QuestionProps> = (props) => {
       const answerBoxHeight = answerBoxRef.current?.offsetHeight || 0;
       const imgBox = document.querySelector(`.${classes.imgBox}`) as HTMLDivElement | null;
       if (imgBox) {
-        console.log(answerBoxHeight);
         imgBox.style.maxHeight = `${answerBoxHeight*0.7}px`;
       }
     };
@@ -47,7 +46,7 @@ export const Question: React.FC<QuestionProps> = (props) => {
             </button>
           ))}
           <div className={classes.btnBox}>
-            <div className={classes.quesNum}>{props.question.id}/25</div>
+            <div className={classes.quesNum}>{props.question.id}/{props.totalQuestions}</div>
             <button className={classes.btn} onClick={handleButtonClick}>
               Next One &gt;
             </button>

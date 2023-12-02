@@ -24,7 +24,7 @@ export default function ImageQuestion(props: McqProps) {
         <div className={classes.optionsBox}>
           <div className={classes.btnBox}>
             {!first && <button className={classes.btn}  onClick={props.gotoPrev} >&lt; Previous One</button>}
-            <div className={classes.quesNum}>{props.question.id}/25</div>
+            <div className={classes.quesNum}>{props.question.id}/{props.totalQuestions}</div>
             <button className={classes.btn} onClick={props.gotoNext} >Next One &gt;</button>
           </div>
         </div>

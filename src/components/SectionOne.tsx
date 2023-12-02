@@ -8,6 +8,7 @@ interface SectionOneProps {
   updateScore: () => void;
   section: number;
   updateError: (section: number, errorList: error) => void;
+  totalQuestions: number;
 }
 
 export interface DataItem {
@@ -75,7 +76,7 @@ const SectionOne: React.FC<SectionOneProps> = (props) => {
   return (
     <div style={{display: "grid", gridTemplateRows: "1fr 10fr", height: "100%"}} key = {num}>
       <CountdownBar onComplete={startNextQuestion} timeLeft={timeLeft} setTimeLeft={setTimeLeft} />
-      <Question question={data[num]} startNextQuestion={startNextQuestion} setAnswer={setAnswer} />
+      <Question question={data[num]} startNextQuestion={startNextQuestion} setAnswer={setAnswer} totalQuestions={props.totalQuestions}/>
     </div>
   );
 };
@@ -84,6 +85,7 @@ export interface QuestionProps {
   question: DataItem;
   startNextQuestion: () => void;
   setAnswer: (answer: string) => void;
+  totalQuestions: number;
 }
 
 export default SectionOne;

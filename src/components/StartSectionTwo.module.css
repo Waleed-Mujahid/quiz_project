@@ -13,6 +13,7 @@
   font-size: 3.2em;
   line-height: 1.1;
   margin-bottom: 1em;
+  text-align: center
 }
 
 .text {
@@ -33,14 +34,15 @@
 
 @media (max-width: 768px) {
   .textBox {
-    padding: 0 7vw;
+    box-sizing: border-box;
+    padding: 0 4vw;
   }
 
   .heading {
     font-size: 1.5rem;
   }
 
-  .pageText {
-    font-size: 0.8rem;
+  .text {
+    font-size: 1.2rem;
   }
 }

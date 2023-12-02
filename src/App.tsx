@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import LandingPage from "./LandingPage";
 import SectionOne from "./components/SectionOne";
 import SectionTwo from "./components/SectionTwo";
@@ -9,6 +9,11 @@ export interface error {
   categoryID: number
 }
 
+interface section {
+  totalQuestions: number,
+  maxErrorsAllowed: number,
+}
+
 function App() {
   const [isStarted, setIsStarted] = useState(false);
   const [sectionNumber, setSectionNumber] = useState(0);
@@ -16,6 +21,27 @@ function App() {
   const [errorListOne, setErrorListOne] = useState<error[]>([]);
   const [errorListTwo, setErrorListTwo] = useState<error[]>([]);
   const [errorListThree, setErrorListThree] = useState<error[]>([]);
+  const [totalQuestions, setTotalQuestions] = useState<number[]>([]);
+  
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/questions/metadata.json");
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const jsonData = await response.json();
+        updateTotalQuestions(jsonData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const updateTotalQuestions = (data: section[]) => {
+    setTotalQuestions(data.map((section) => section.totalQuestions));
+  }
 
   const updateErrorList = (section: number, error: error) => {
     if (section === 1) {
@@ -32,7 +58,7 @@ function App() {
 
   const clickHandler = () => {
     setIsStarted(true);
-    setSectionNumber(3);
+    setSectionNumber(1);
   };
 
   const incScore = () => {
@@ -56,6 +82,7 @@ function App() {
         updateScore={incScore}
         section={sectionNumber}
         updateError={updateErrorList}
+        totalQuestions={totalQuestions[0]}
       />
     );
   } else if (sectionNumber === 2 || sectionNumber === 3) {
@@ -68,6 +95,7 @@ function App() {
         totalTime={sectionNumber === 2 ? 480 : 960}
         section={sectionNumber}
         updateError={updateErrorList}
+        totalQuestions={totalQuestions[sectionNumber-1]}
       />
     );
   }

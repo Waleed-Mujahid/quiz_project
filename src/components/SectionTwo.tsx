@@ -16,6 +16,7 @@ interface SectionTwoProps {
   totalTime: number;
   section: number;
   updateError: (section: number, errorList: error) => void;
+  totalQuestions: number;
 }
 
 interface DataItem {
@@ -136,6 +137,7 @@ export default function SectionTwo(props: SectionTwoProps) {
         gotoPrev={decNum}
         updateAnswer={updateAnswer}
         answer={isAnswered[num]}
+        totalQuestions={props.totalQuestions}
       />
     );
   else if (data[num].type === "input")
@@ -146,6 +148,7 @@ export default function SectionTwo(props: SectionTwoProps) {
         gotoPrev={decNum}
         updateAnswer={updateAnswer}
         answer={isAnswered[num]}
+        totalQuestions={props.totalQuestions}
       />
     );
   else if (data[num].type === "image")
@@ -156,6 +159,7 @@ export default function SectionTwo(props: SectionTwoProps) {
         gotoPrev={decNum}
         updateAnswer={updateAnswer}
         answer={isAnswered[num]}
+        totalQuestions={props.totalQuestions}
       />
     );
   else {
@@ -163,7 +167,7 @@ export default function SectionTwo(props: SectionTwoProps) {
   }
 
   return (
-    <div style={{display: "grid", gridTemplateRows: "1fr 10fr", height: "100%"}}>
+    <div style={{display: "grid", gridTemplateRows: "1fr 10fr", height: "100%", boxSizing: "border-box"}}>
       <CountdownBar2
         flagQuestion={toggleFlagged}
         flag={flagged[num]}
@@ -189,4 +193,5 @@ export interface McqProps {
   gotoPrev: () => void;
   updateAnswer: (answer: string) => void;
   answer: string;
+  totalQuestions: number;
 }
