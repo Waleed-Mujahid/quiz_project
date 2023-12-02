@@ -10,7 +10,7 @@ interface CountdownBar2Props {
   totalTime: number;
 }
 
-export const CountdownBar2 = (props: CountdownBar2Props) => {
+const CountdownBarSecond = (props: CountdownBar2Props) => {
   const barColor = "#00ff00";
   const textColor = "#ffffff";
   const totalTimeInSeconds = props.totalTime;
@@ -70,3 +70,5 @@ export const CountdownBar2 = (props: CountdownBar2Props) => {
     </div>
   );
 };
+
+export default CountdownBarSecond;

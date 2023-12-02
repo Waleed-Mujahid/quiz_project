@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { CountdownBar2 } from "./CountdownBarSecond";
+import CountdownBarSecond from "./CountdownBarSecond";
 import StartSectionTwo from "./StartSectionTwo";
 import StartSectionThree from "./StartSectionThree";
 import McqQuestion from "./McqQuestion";
@@ -168,7 +168,7 @@ export default function SectionTwo(props: SectionTwoProps) {
 
   return (
     <div style={{display: "grid", gridTemplateRows: "1fr 10fr", height: "100%", boxSizing: "border-box"}}>
-      <CountdownBar2
+      <CountdownBarSecond
         flagQuestion={toggleFlagged}
         flag={flagged[num]}
         toggleShowFlagged={toggleShowFlagged}
