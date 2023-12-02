@@ -44,7 +44,6 @@
 }
 
 
-
 .optionsBox {
   flex-grow: 1;
   display: flex;
@@ -107,6 +106,7 @@
   }
   .imgBox {
     width: 80%;
+    height: auto;
     margin: 0 auto;
   }
   .img {

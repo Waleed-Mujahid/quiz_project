@@ -66,6 +66,6 @@ html, body, #root {
 
 @media screen and (width >= 768px) {
   #root {
-    max-height: 100vh;
+    /* max-height: 100vh; */
   }
 }
