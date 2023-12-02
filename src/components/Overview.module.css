@@ -8,7 +8,7 @@
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   width: 40%;
-  height: fit-content;
+  height: auto;
   background-color: white;
   padding: 2vw;
   color: black;
