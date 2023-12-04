@@ -5,12 +5,14 @@ import SectionScore from "./SectionScore";
 import ShowWrongQuestion from "./ShowWrongQuestion";
 import { error } from "../App";
 import { ShowCategory } from "./ShowCategory";
+import { category } from "../App";
 
 interface ShowScoreProps {
   score: number;
   sectionOneErrors: error[];
   sectionTwoErrors: error[];
   sectionThreeErrors: error[];
+  categories: category[];
 }
 
 interface dataItem {
@@ -18,18 +20,12 @@ interface dataItem {
   maxErrorsAllowed: number;
 }
 
-interface category {
-  categoryID: number;
-  categoryName: string;
-  total: number;
-}
-
 export default function ShowScore(props: ShowScoreProps) {
   const percentage = Math.round((props.score / 9) * 100);
-  const msg = percentage > 60 ? "Congratulations!" : "Unfortunately";
+  const msg = percentage > 70 ? "Congratulations!" : "Unfortunately";
   const subMmsg =
-    percentage > 60 ? "You passed the exam" : "You failed the exam";
-  const color = percentage > 60 ? `rgb(67, 100, 46)` : `rgb(255,100,100)`;
+    percentage > 70 ? "You passed the exam" : "You failed the exam";
+  const color = percentage > 70 ? `rgb(67, 100, 46)` : `rgb(255,100,100)`;
 
   const sectionOneError =
     props.sectionOneErrors[
@@ -50,9 +46,10 @@ export default function ShowScore(props: ShowScoreProps) {
     props.sectionThreeErrors.length;
 
   const [data, setData] = useState<dataItem[]>([]);
-  const [categories, setCategories] = useState<category[]>([]);
-  const [totalWrongCategory, setTotalWrongCategory] = useState<number[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  const [totalWrongCategory, setTotalWrongCategory] = useState<number[]>(
+    Array.from({ length: 5 }, () => 0)
+  );
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
   const fetchMetaData = async () => {
     try {
@@ -63,21 +60,6 @@ export default function ShowScore(props: ShowScoreProps) {
 
       const jsonData = await response.json();
       setData(jsonData);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
-  const fetchCategory = async () => {
-    try {
-      const response = await fetch("/questions/categories.json");
-      if (!response.ok) {
-        throw new Error("Failed to fetch data");
-      }
-
-      const jsonData = await response.json();
-      setCategories(jsonData);
-      setTotalWrongCategory(Array(jsonData.length).fill(0));
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -97,26 +79,25 @@ export default function ShowScore(props: ShowScoreProps) {
     }
   };
 
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        await Promise.all([fetchMetaData(), fetchCategory()]);
-        const allErrors = [
-          ...props.sectionOneErrors,
-          ...props.sectionTwoErrors,
-          ...props.sectionThreeErrors,
-        ];
-        calcCategoryFromSection(allErrors);
+        await Promise.all([fetchMetaData()]);
+        calcCategoryFromSection(props.sectionOneErrors);
+        calcCategoryFromSection(props.sectionTwoErrors);
+        calcCategoryFromSection(props.sectionThreeErrors);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
-        setLoading(false);
+        setIsLoaded(true);
       }
     };
 
     fetchData();
   }, []);
-  if (loading) return <div>Loading...</div>;
+
+  if (!isLoaded) return <div>Loading...</div>;
 
   const getSectionErrorCount = (sectionIndex: number) => {
     switch (sectionIndex) {
@@ -172,10 +153,13 @@ export default function ShowScore(props: ShowScoreProps) {
         {/* Category wise result */}
         <div className={classes.subHeading2}>Category wise result</div>
         <div className={classes.catGrid}>
-          <ShowCategory category = {categories[0]} total = {totalWrongCategory[0]} />
-          <ShowCategory category = {categories[1]} total = {totalWrongCategory[1]} />
-          <ShowCategory category = {categories[2]} total = {totalWrongCategory[2]} />
-
+          {props.categories.map((category, index) => (
+            <ShowCategory
+              key={index}
+              category={category}
+              total={totalWrongCategory[index]}
+            />
+          ))}
         </div>
       </div>
     </div>
@@ -186,5 +170,3 @@ export interface ShowCategoryProps {
   category: category;
   total: number;
 }
-
-

@@ -7,7 +7,7 @@ import ShowFlag from "./ShowFlag";
 import Overview from "./Overview";
 import InputQuestion from "./InputQuestion";
 import ImageQuestion from "./ImageQuestion";
-import { error } from "../App";
+import { error, category } from "../App";
 
 interface SectionTwoProps {
   updateScore: (newScore: number) => void;
@@ -17,6 +17,7 @@ interface SectionTwoProps {
   section: number;
   updateError: (section: number, errorList: error) => void;
   totalQuestions: number;
+  category: category[];
 }
 
 interface DataItem {
@@ -39,6 +40,7 @@ export default function SectionTwo(props: SectionTwoProps) {
   const [showFlagged, setShowFlagged] = useState<boolean>(false);
   const [showOverview, setShowOverview] = useState<boolean>(false);
   const [gotoNextSection, setGotoNextSection] = useState<boolean>(false);
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
   const fetchData = async () => {
     try {
@@ -49,6 +51,7 @@ export default function SectionTwo(props: SectionTwoProps) {
 
       const jsonData = await response.json();
       setData(jsonData);
+      setIsLoaded(true);
       setFlagged(Array(jsonData.length).fill(false));
       setIsAnswered(Array(jsonData.length).fill(""));
     } catch (error) {
@@ -56,9 +59,19 @@ export default function SectionTwo(props: SectionTwoProps) {
     }
   };
 
+  const setCategory = () => {
+    for (let i = 0; i < data.length; i++) {
+      props.category[data[i].categoryID - 1].total++;
+    }
+  }
+
   useEffect(() => {
     fetchData();
   }, []);
+
+  useEffect(() => {
+    setCategory();
+  }, [isLoaded]);
 
   const incNum = () => {
     if (num < data.length - 1) {
@@ -132,6 +145,7 @@ export default function SectionTwo(props: SectionTwoProps) {
   } else if (data[num].type === "mcq")
     component = (
       <McqQuestion
+        key = {num}
         question={data[num]}
         gotoNext={incNum}
         gotoPrev={decNum}

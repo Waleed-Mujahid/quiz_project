@@ -9,7 +9,7 @@
       "London"
     ],
     "correctAnswer": "Paris",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Paris_vue_d%27ensemble_tour_Eiffel.jpg/1200px-Paris_vue_d%27ensemble_tour_Eiffel.jpg"
+    "img": ""
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
       "Neptune"
     ],
     "correctAnswer": "Jupiter",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/1200px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg"
+    "img": ""
   },
   {
     "id": 3,
@@ -38,5 +38,56 @@
     ],
     "correctAnswer": "Leonardo da Vinci",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/1200px-Mona_Lisa.jpg"
+  },{
+    "id": 4,
+    "type": "mcq",
+    "categoryID": 3,
+    "question": "What is the largest planet in our solar system?",
+    "answers": [
+      "Jupiter",
+      "Saturn",
+      "Earth"
+    ],
+    "correctAnswer": "Jupiter",
+    "img": ""
+  },
+  {
+    "id": 5,
+    "type": "mcq",
+    "categoryID": 3,
+    "question": "Which ocean is the largest by surface area?",
+    "answers": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean"
+    ],
+    "correctAnswer": "Pacific Ocean",
+    "img": ""
+  },
+  {
+    "id": 6,
+    "type": "mcq",
+    "categoryID": 3,
+    "question": "What is the main ingredient in guacamole?",
+    "answers": [
+      "Avocado",
+      "Tomato",
+      "Onion"
+    ],
+    "correctAnswer": "Avocado",
+    "img": ""
+  },
+  {
+    "id": 7,
+    "type": "mcq",
+    "categoryID": 4,
+    "question": "Which famous scientist developed the theory of relativity?",
+    "answers": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Stephen Hawking"
+    ],
+    "correctAnswer": "Albert Einstein",
+    "img": ""
   }
 ]

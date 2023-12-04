@@ -50,6 +50,7 @@
   flex-direction: column;
   box-sizing: border-box;
   padding: 2vw 5vw;
+  place-items: center;
 }
 
 .option {
@@ -63,6 +64,7 @@
   cursor: pointer;
   margin-bottom: 1vw; 
   font-weight: normal;
+  text-align: center;
 }
 
 .option:hover {
@@ -123,8 +125,7 @@
 
   .questionBox {
     font-size: 1rem;
-    margin-left: 0;
-    margin-right: 0;
+    padding: 2vw;
   }
 
   .btn {

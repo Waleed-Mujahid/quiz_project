@@ -14,6 +14,12 @@ interface section {
   maxErrorsAllowed: number,
 }
 
+export interface category {
+  categoryID: number;
+  categoryName: string;
+  total: number;
+}
+
 function App() {
   const [isStarted, setIsStarted] = useState(false);
   const [sectionNumber, setSectionNumber] = useState(0);
@@ -22,21 +28,39 @@ function App() {
   const [errorListTwo, setErrorListTwo] = useState<error[]>([]);
   const [errorListThree, setErrorListThree] = useState<error[]>([]);
   const [totalQuestions, setTotalQuestions] = useState<number[]>([]);
-  
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/questions/metadata.json");
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
-        const jsonData = await response.json();
-        updateTotalQuestions(jsonData);
-      } catch (error) {
-        console.error("Error fetching data:", error);
+  const [categories, setCategories] = useState<category[]>([]);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch("/questions/metadata.json");
+      if (!response.ok) {
+        throw new Error("Failed to fetch data");
       }
-    };
+      const jsonData = await response.json();
+      updateTotalQuestions(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  const fetchCategory = async () => {
+    try {
+      const response = await fetch("/questions/categories.json");
+      if (!response.ok) {
+        throw new Error("Failed to fetch data");
+      }
+
+      const jsonData = await response.json();
+      setCategories(jsonData);
+      // setTotalWrongCategory(Array(jsonData.length).fill(0));
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
     fetchData();
+    fetchCategory();
   }, []);
 
   const updateTotalQuestions = (data: section[]) => {
@@ -83,6 +107,7 @@ function App() {
         section={sectionNumber}
         updateError={updateErrorList}
         totalQuestions={totalQuestions[0]}
+        category={categories}
       />
     );
   } else if (sectionNumber === 2 || sectionNumber === 3) {
@@ -96,6 +121,7 @@ function App() {
         section={sectionNumber}
         updateError={updateErrorList}
         totalQuestions={totalQuestions[sectionNumber-1]}
+        category={categories}
       />
     );
   }
@@ -107,6 +133,7 @@ function App() {
       sectionOneErrors={errorListOne}
       sectionTwoErrors={errorListTwo}
       sectionThreeErrors={errorListThree}
+      categories={categories}
     />
   );
 }

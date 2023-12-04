@@ -48,6 +48,7 @@
   flex-direction: column;
   box-sizing: border-box;
   padding: 2vw 5vw;
+  place-items: center;
 }
 
 .option {
@@ -125,8 +126,7 @@
 
   .questionBox {
     font-size: 1rem;
-    margin-left: 0;
-    margin-right: 0;
+    padding: 2vw;
   }
 
   .btn {

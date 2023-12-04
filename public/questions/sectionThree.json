@@ -1,6 +1,331 @@
 [
   {
     "id": 1,
+    "categoryID": 1,
+    "type": "mcq",
+    "question": "Which planet is known as the \"Morning Star\" or \"Evening Star\"?",
+    "answers": [
+      "Venus",
+      "Mars",
+      "Mercury"
+    ],
+    "correctAnswer": "Venus",
+    "img": ""
+  },
+  {
+    "id": 2,
+    "categoryID": 2,
+    "type": "mcq",
+    "question": "Who is the legendary wizard in the Harry Potter series?",
+    "answers": [
+      "Albus Dumbledore",
+      "Severus Snape",
+      "Sirius Black"
+    ],
+    "correctAnswer": "Albus Dumbledore",
+    "img": ""
+  },
+  {
+    "id": 3,
+    "type": "mcq",
+    "categoryID": 2,
+    "question": "What is the currency of Brazil?",
+    "answers": [
+      "Brazilian Real",
+      "Brazilian Dollar",
+      "Brazilian Peso"
+    ],
+    "correctAnswer": "Brazilian Real",
+    "img": ""
+  },
+  {
+    "id": 4,
+    "type": "mcq",
+    "categoryID": 3,
+    "question": "Which famous artist is known for painting the \"Starry Night\"?",
+    "answers": [
+      "Vincent van Gogh",
+      "Leonardo da Vinci",
+      "Pablo Picasso"
+    ],
+    "correctAnswer": "Vincent van Gogh",
+    "img": ""
+  },
+  {
+    "id": 5,
+    "type": "mcq",
+    "categoryID": 3,
+    "question": "In which year did the Berlin Wall fall?",
+    "answers": [
+      "1989",
+      "1991",
+      "1993"
+    ],
+    "correctAnswer": "1989",
+    "img": ""
+  },
+  {
+    "id": 6,
+    "type": "mcq",
+    "categoryID": 3,
+    "question": "What is the official language of Argentina?",
+    "answers": [
+      "Spanish",
+      "Portuguese",
+      "English"
+    ],
+    "correctAnswer": "Spanish",
+    "img": ""
+  },
+  {
+    "id": 7,
+    "type": "mcq",
+    "categoryID": 4,
+    "question": "Who wrote the novel \"1984\"?",
+    "answers": [
+      "George Orwell",
+      "Aldous Huxley",
+      "Ray Bradbury"
+    ],
+    "correctAnswer": "George Orwell",
+    "img": ""
+  },
+  {
+    "id": 8,
+    "type": "mcq",
+    "categoryID": 4,
+    "question": "Which planet is known for its beautiful ring system?",
+    "answers": [
+      "Saturn",
+      "Jupiter",
+      "Uranus"
+    ],
+    "correctAnswer": "Saturn",
+    "img": ""
+  },
+  {
+    "id": 9,
+    "type": "mcq",
+    "categoryID": 4,
+    "question": "What is the smallest prime number?",
+    "answers": [
+      "2",
+      "1",
+      "0"
+    ],
+    "correctAnswer": "2",
+    "img": ""
+  },
+  {
+    "id": 10,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Which ocean is the saltiest?",
+    "answers": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Indian Ocean"
+    ],
+    "correctAnswer": "Atlantic Ocean",
+    "img": ""
+  },
+  {
+    "id": 11,
+    "type": "mcq",
+    "categoryID": 2,
+    "question": "Who was the first woman to win a Nobel Prize?",
+    "answers": [
+      "Marie Curie",
+      "Rosalind Franklin",
+      "Ada Lovelace"
+    ],
+    "correctAnswer": "Marie Curie",
+    "img": ""
+  },
+  {
+    "id": 12,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "What is the currency of South Korea?",
+    "answers": [
+      "Won",
+      "Yuan",
+      "Baht"
+    ],
+    "correctAnswer": "Won",
+    "img": ""
+  },
+  {
+    "id": 13,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "In Greek mythology, who is the god of the sea?",
+    "answers": [
+      "Poseidon",
+      "Zeus",
+      "Hades"
+    ],
+    "correctAnswer": "Poseidon",
+    "img": ""
+  },
+  {
+    "id": 14,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Which country is known as the \"Land of the Rising Sun\"?",
+    "answers": [
+      "Japan",
+      "China",
+      "Korea"
+    ],
+    "correctAnswer": "Japan",
+    "img": ""
+  },
+  {
+    "id": 15,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "What is the largest desert in the world?",
+    "answers": [
+      "Sahara Desert",
+      "Arabian Desert",
+      "Gobi Desert"
+    ],
+    "correctAnswer": "Sahara Desert",
+    "img": ""
+  },
+  {
+    "id": 16,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Which planet is known as the Red Planet?",
+    "answers": [
+      "Mars",
+      "Jupiter",
+      "Mercury"
+    ],
+    "correctAnswer": "Mars",
+    "img": ""
+  },
+  {
+    "id": 17,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "What is the capital of Australia?",
+    "answers": [
+      "Canberra",
+      "Sydney",
+      "Melbourne"
+    ],
+    "correctAnswer": "Canberra",
+    "img": ""
+  },
+  {
+    "id": 18,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Who is the lead vocalist of the band Queen?",
+    "answers": [
+      "Freddie Mercury",
+      "Brian May",
+      "Roger Taylor"
+    ],
+    "correctAnswer": "Freddie Mercury",
+    "img": ""
+  },
+  {
+    "id": 19,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "What is the primary ingredient in hummus?",
+    "answers": [
+      "Chickpeas",
+      "Lentils",
+      "Beans"
+    ],
+    "correctAnswer": "Chickpeas",
+    "img": ""
+  },
+  {
+    "id": 20,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Which famous landmark is located in Rio de Janeiro, Brazil?",
+    "answers": [
+      "Christ the Redeemer",
+      "Taj Mahal",
+      "Great Wall of China"
+    ],
+    "correctAnswer": "Christ the Redeemer",
+    "img": ""
+  },
+  {
+    "id": 21,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Who wrote the play \"Hamlet\"?",
+    "answers": [
+      "William Shakespeare",
+      "Charles Dickens",
+      "Jane Austen"
+    ],
+    "correctAnswer": "William Shakespeare",
+    "img": ""
+  },
+  {
+    "id": 22,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "In which galaxy is our solar system located?",
+    "answers": [
+      "Milky Way",
+      "Andromeda",
+      "Sombrero"
+    ],
+    "correctAnswer": "Milky Way",
+    "img": ""
+  },
+  {
+    "id": 23,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "What is the largest mammal on Earth?",
+    "answers": [
+      "Blue Whale",
+      "Elephant",
+      "Giraffe"
+    ],
+    "correctAnswer": "Blue Whale",
+    "img": ""
+  },
+  {
+    "id": 24,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Which country is known as the Land of a Thousand Lakes?",
+    "answers": [
+      "Finland",
+      "Sweden",
+      "Norway"
+    ],
+    "correctAnswer": "Finland",
+    "img": ""
+  },
+  {
+    "id": 25,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "What is the chemical symbol for gold?",
+    "answers": [
+      "Au",
+      "Ag",
+      "Fe"
+    ],
+    "correctAnswer": "Au",
+    "img": ""
+  },
+  {
+    "id": 26,
     "categoryID": 3,
     "type": "mcq",
     "question": "What is the capital of France?",
@@ -12,19 +337,19 @@
     "img": "/pictures/question.png"
   },
   {
-    "id": 2,
+    "id": 27,
     "categoryID": 1,
     "type": "input",
     "question": "What is the number of planets in the solar system?",
     "correctAnswer": "8",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/1200px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg"
+    "img": ""
   },
   {
-    "id": 3,
+    "id": 28,
     "categoryID": 1,
     "type": "image",
     "question": "Who painted the Mona Lisa?",
-    "optionImages" : [
+    "optionImages": [
       "https://www.sabsignage.com/wp-content/uploads/2019/07/Cautionary-and-Mandatory-Signboard.jpg",
       "https://m.media-amazon.com/images/I/515l-e-sG6L._AC_UF1000,1000_QL80_.jpg",
       "https://m.media-amazon.com/images/I/619yG61w93L._SX425_.jpg"

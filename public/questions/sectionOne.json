@@ -6,37 +6,322 @@
     "question": "What is the capital of France?",
     "answers": [
       "Paris",
+      "Berlin",
       "London"
     ],
     "correctAnswer": "Paris",
-    "img": "https://media.gettyimages.com/id/1298383663/photo/aerial-view-of-paris-streets-and-eiffel-tower-at-sunset-france.jpg?s=170667a&w=gi&k=20&c=7U_RBiO6T6FSTLRZ5jXZ2FUR3vpTX8Zxq_3W8E8teaY="
+    "img": "https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg"
   },
   {
     "id": 2,
     "categoryID": 2,
     "type": "mcq",
-    "question": "What is the largest planet in our solar system?",
+    "question": "In which continent is the Amazon Rainforest located?",
     "answers": [
-      "Jupiter",
-      "Mars",
-      "Earth",
-      "Saturn",
-      "Neptune"
+      "South America",
+      "Africa",
+      "Asia"
     ],
-    "correctAnswer": "Jupiter",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/800px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg"
+    "correctAnswer": "South America",
+    "img": ""
   },
   {
     "id": 3,
     "type": "mcq",
     "categoryID": 2,
+    "question": "Who wrote \"Romeo and Juliet\"?",
+    "answers": [
+      "William Shakespeare",
+      "Charles Dickens",
+      "Jane Austen"
+    ],
+    "correctAnswer": "William Shakespeare",
+    "img": ""
+  },
+  {
+    "id": 4,
+    "type": "mcq",
+    "categoryID": 3,
+    "question": "What is the largest planet in our solar system?",
+    "answers": [
+      "Jupiter",
+      "Saturn",
+      "Earth"
+    ],
+    "correctAnswer": "Jupiter",
+    "img": ""
+  },
+  {
+    "id": 5,
+    "type": "mcq",
+    "categoryID": 3,
+    "question": "Which ocean is the largest by surface area?",
+    "answers": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean"
+    ],
+    "correctAnswer": "Pacific Ocean",
+    "img": ""
+  },
+  {
+    "id": 6,
+    "type": "mcq",
+    "categoryID": 3,
+    "question": "What is the main ingredient in guacamole?",
+    "answers": [
+      "Avocado",
+      "Tomato",
+      "Onion"
+    ],
+    "correctAnswer": "Avocado",
+    "img": ""
+  },
+  {
+    "id": 7,
+    "type": "mcq",
+    "categoryID": 4,
+    "question": "Which famous scientist developed the theory of relativity?",
+    "answers": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Stephen Hawking"
+    ],
+    "correctAnswer": "Albert Einstein",
+    "img": ""
+  },
+  {
+    "id": 8,
+    "type": "mcq",
+    "categoryID": 4,
+    "question": "What is the currency of Japan?",
+    "answers": [
+      "Yen",
+      "Dollar",
+      "Euro"
+    ],
+    "correctAnswer": "Yen",
+    "img": ""
+  },
+  {
+    "id": 9,
+    "type": "mcq",
+    "categoryID": 4,
+    "question": "Which element has the chemical symbol \"O\"?",
+    "answers": [
+      "Oxygen",
+      "Gold",
+      "Iron"
+    ],
+    "correctAnswer": "Oxygen",
+    "img": ""
+  },
+  {
+    "id": 10,
+    "type": "mcq",
+    "categoryID": 5,
     "question": "Who painted the Mona Lisa?",
     "answers": [
       "Leonardo da Vinci",
-      "Pablo Picasso",
-      "Vincent van Gogh"
+      "Vincent van Gogh",
+      "Pablo Picasso"
     ],
     "correctAnswer": "Leonardo da Vinci",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/800px-Mona_Lisa.jpg"
+    "img": ""
+  },
+  {
+    "id": 11,
+    "type": "mcq",
+    "categoryID": 2,
+    "question": "What is the tallest mountain in the world?",
+    "answers": [
+      "Mount Everest",
+      "Mount Kilimanjaro",
+      "Mount Fuji"
+    ],
+    "correctAnswer": "Mount Everest",
+    "img": ""
+  },
+  {
+    "id": 12,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "answers": [
+      "Japan",
+      "China",
+      "Korea"
+    ],
+    "correctAnswer": "Japan",
+    "img": ""
+  },
+  {
+    "id": 13,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Who is the author of \"To Kill a Mockingbird\"?",
+    "answers": [
+      "Harper Lee",
+      "Mark Twain",
+      "F. Scott Fitzgerald"
+    ],
+    "correctAnswer": "Harper Lee",
+    "img": ""
+  },
+  {
+    "id": 14,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "In which year did the Titanic sink?",
+    "answers": [
+      "1912",
+      "1914",
+      "1916"
+    ],
+    "correctAnswer": "1912",
+    "img": ""
+  },
+  {
+    "id": 15,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "What is the largest desert in the world?",
+    "answers": [
+      "Sahara Desert",
+      "Arabian Desert",
+      "Gobi Desert"
+    ],
+    "correctAnswer": "Sahara Desert",
+    "img": ""
+  },
+  {
+    "id": 16,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Which planet is known as the Red Planet?",
+    "answers": [
+      "Mars",
+      "Jupiter",
+      "Mercury"
+    ],
+    "correctAnswer": "Mars",
+    "img": ""
+  },
+  {
+    "id": 17,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "What is the capital of Australia?",
+    "answers": [
+      "Canberra",
+      "Sydney",
+      "Melbourne"
+    ],
+    "correctAnswer": "Canberra",
+    "img": ""
+  },
+  {
+    "id": 18,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Who is the lead vocalist of the band Queen?",
+    "answers": [
+      "Freddie Mercury",
+      "Brian May",
+      "Roger Taylor"
+    ],
+    "correctAnswer": "Freddie Mercury",
+    "img": ""
+  },
+  {
+    "id": 19,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "What is the primary ingredient in hummus?",
+    "answers": [
+      "Chickpeas",
+      "Lentils",
+      "Beans"
+    ],
+    "correctAnswer": "Chickpeas",
+    "img": ""
+  },
+  {
+    "id": 20,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Which famous landmark is located in Rio de Janeiro, Brazil?",
+    "answers": [
+      "Christ the Redeemer",
+      "Taj Mahal",
+      "Great Wall of China"
+    ],
+    "correctAnswer": "Christ the Redeemer",
+    "img": ""
+  },
+  {
+    "id": 21,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Who wrote the play \"Hamlet\"?",
+    "answers": [
+      "William Shakespeare",
+      "Charles Dickens",
+      "Jane Austen"
+    ],
+    "correctAnswer": "William Shakespeare",
+    "img": ""
+  },
+  {
+    "id": 22,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "In which galaxy is our solar system located?",
+    "answers": [
+      "Milky Way",
+      "Andromeda",
+      "Sombrero"
+    ],
+    "correctAnswer": "Milky Way",
+    "img": ""
+  },
+  {
+    "id": 23,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "What is the largest mammal on Earth?",
+    "answers": [
+      "Blue Whale",
+      "Elephant",
+      "Giraffe"
+    ],
+    "correctAnswer": "Blue Whale",
+    "img": ""
+  },
+  {
+    "id": 24,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "Which country is known as the Land of a Thousand Lakes?",
+    "answers": [
+      "Finland",
+      "Sweden",
+      "Norway"
+    ],
+    "correctAnswer": "Finland",
+    "img": ""
+  },
+  {
+    "id": 25,
+    "type": "mcq",
+    "categoryID": 5,
+    "question": "What is the chemical symbol for gold?",
+    "answers": [
+      "Au",
+      "Ag",
+      "Fe"
+    ],
+    "correctAnswer": "Au",
+    "img": ""
   }
 ]

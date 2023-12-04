@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function InputQuestion(props: McqProps) {
   const first = props.question.id === 1;
+  const isImage = props.question.img !== "";
   const value = "Type your answer";
   const [input, setInput] = useState(`${props.answer ? props.answer : ""}`);
 
@@ -22,13 +23,13 @@ export default function InputQuestion(props: McqProps) {
       <div className={classes.questionBox}>{props.question.question}</div>
       <div className={classes.clear}></div>
       <div className={classes.answerBox}>
-        <div className={classes.imgBox}>
+        {isImage && (<div className={classes.imgBox}>
           <img
             className={classes.img}
             src={props.question.img}
             alt="image for question"
           />
-        </div>
+        </div>)}
         <div className={classes.optionsBox}>
           <div className={classes.value}>{input === "" ? value : input}</div>
           <div className={classes.gridContainer}>

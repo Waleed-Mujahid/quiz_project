@@ -1,16 +1,16 @@
 [
   {
-    "totalQuestions": 3,
+    "totalQuestions": 25,
     "maxErrorsAllowed": 1
   }
   ,
   {
-    "totalQuestions": 3,
+    "totalQuestions": 7,
     "maxErrorsAllowed": 1
   }
   ,
   {
-    "totalQuestions": 3,
+    "totalQuestions": 28,
     "maxErrorsAllowed": 1
   }
 ]
