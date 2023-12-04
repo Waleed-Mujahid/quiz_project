@@ -21,7 +21,7 @@ interface dataItem {
 }
 
 export default function ShowScore(props: ShowScoreProps) {
-  const percentage = Math.round((props.score / 9) * 100);
+  const percentage = Math.round((props.score / 25+3+28) * 100);
   const msg = percentage > 70 ? "Congratulations!" : "Unfortunately";
   const subMmsg =
     percentage > 70 ? "You passed the exam" : "You failed the exam";
