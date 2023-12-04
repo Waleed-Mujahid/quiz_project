@@ -126,7 +126,7 @@ function App() {
     );
   }
 
-
+  const totalQ = totalQuestions[0] + totalQuestions[1] + totalQuestions[2];
   return (
     <ShowScore
       score={score}
@@ -134,6 +134,7 @@ function App() {
       sectionTwoErrors={errorListTwo}
       sectionThreeErrors={errorListThree}
       categories={categories}
+      totalQ = {totalQ} 
     />
   );
 }
