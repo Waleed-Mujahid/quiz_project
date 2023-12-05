@@ -23,13 +23,6 @@ export default function LandingPage(props: LandingPageProps) {
         8 seconds to answer each question. You must answer at least 13 questions
         correctly in this part. With every question you are always given the
         choice of what to do in a situation: brake, release the accelerator or
-        nothing. Good luck!
-      </div>
-      <div className={classes.pageText}>
-        You will first be asked 25 hazard perception questions and you only have
-        8 seconds to answer each question. You must answer at least 13 questions
-        correctly in this part. With every question you are always given the
-        choice of what to do in a situation: brake, release the accelerator or
         nothing.
         <br />
          Good luck!

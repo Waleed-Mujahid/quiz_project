@@ -9,7 +9,7 @@
       "London"
     ],
     "correctAnswer": "Paris",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
       "Neptune"
     ],
     "correctAnswer": "Jupiter",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 3,
@@ -37,7 +37,7 @@
       "Vincent van Gogh"
     ],
     "correctAnswer": "Leonardo da Vinci",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/1200px-Mona_Lisa.jpg"
+    "img": "/pictures/question.png"
   },{
     "id": 4,
     "type": "mcq",
@@ -49,7 +49,7 @@
       "Earth"
     ],
     "correctAnswer": "Jupiter",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
       "Indian Ocean"
     ],
     "correctAnswer": "Pacific Ocean",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
       "Onion"
     ],
     "correctAnswer": "Avocado",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 7,
@@ -88,6 +88,6 @@
       "Stephen Hawking"
     ],
     "correctAnswer": "Albert Einstein",
-    "img": ""
+    "img": "/pictures/question.png"
   }
 ]

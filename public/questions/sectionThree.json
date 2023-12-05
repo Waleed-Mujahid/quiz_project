@@ -10,7 +10,7 @@
       "Mercury"
     ],
     "correctAnswer": "Venus",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@
       "Sirius Black"
     ],
     "correctAnswer": "Albus Dumbledore",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@
       "Brazilian Peso"
     ],
     "correctAnswer": "Brazilian Real",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@
       "Pablo Picasso"
     ],
     "correctAnswer": "Vincent van Gogh",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
       "1993"
     ],
     "correctAnswer": "1989",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
       "English"
     ],
     "correctAnswer": "Spanish",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 7,
@@ -88,7 +88,7 @@
       "Ray Bradbury"
     ],
     "correctAnswer": "George Orwell",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 8,
@@ -101,7 +101,7 @@
       "Uranus"
     ],
     "correctAnswer": "Saturn",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 9,
@@ -114,7 +114,7 @@
       "0"
     ],
     "correctAnswer": "2",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 10,
@@ -127,7 +127,7 @@
       "Indian Ocean"
     ],
     "correctAnswer": "Atlantic Ocean",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 11,
@@ -140,7 +140,7 @@
       "Ada Lovelace"
     ],
     "correctAnswer": "Marie Curie",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 12,
@@ -153,7 +153,7 @@
       "Baht"
     ],
     "correctAnswer": "Won",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 13,
@@ -166,7 +166,7 @@
       "Hades"
     ],
     "correctAnswer": "Poseidon",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 14,
@@ -179,7 +179,7 @@
       "Korea"
     ],
     "correctAnswer": "Japan",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 15,
@@ -192,7 +192,7 @@
       "Gobi Desert"
     ],
     "correctAnswer": "Sahara Desert",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 16,
@@ -205,7 +205,7 @@
       "Mercury"
     ],
     "correctAnswer": "Mars",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 17,
@@ -218,7 +218,7 @@
       "Melbourne"
     ],
     "correctAnswer": "Canberra",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 18,
@@ -231,7 +231,7 @@
       "Roger Taylor"
     ],
     "correctAnswer": "Freddie Mercury",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 19,
@@ -244,7 +244,7 @@
       "Beans"
     ],
     "correctAnswer": "Chickpeas",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 20,
@@ -257,7 +257,7 @@
       "Great Wall of China"
     ],
     "correctAnswer": "Christ the Redeemer",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 21,
@@ -270,7 +270,7 @@
       "Jane Austen"
     ],
     "correctAnswer": "William Shakespeare",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 22,
@@ -283,7 +283,7 @@
       "Sombrero"
     ],
     "correctAnswer": "Milky Way",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 23,
@@ -296,7 +296,7 @@
       "Giraffe"
     ],
     "correctAnswer": "Blue Whale",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 24,
@@ -309,7 +309,7 @@
       "Norway"
     ],
     "correctAnswer": "Finland",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 25,
@@ -322,7 +322,7 @@
       "Fe"
     ],
     "correctAnswer": "Au",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 26,
@@ -342,7 +342,7 @@
     "type": "input",
     "question": "What is the number of planets in the solar system?",
     "correctAnswer": "8",
-    "img": ""
+    "img": "/pictures/question.png"
   },
   {
     "id": 28,
